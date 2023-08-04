@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destino - Para onde iremos?</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+<body>
+<!--Início do Menu com acesso para as 4 guias do site-->
+    <header>
+        <nav class="navbar navbar-expand-sm Navbar">
+            <div class="container-fluid">
+                <a class="navbard-brand" href="#"><img id="logo" src="./imagens/logo_nav.png" alt="Vogue Agency"></a>
+                <button class="navbar-toggler navbar-light collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNavbar" aria-controls="navbar-links" aria-expanded="false" aria-label="toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse" id="collapseNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link text-black" href="./index.html">Home</a>
+                         </li>
+                         <li class="nav-item">
+                            <a class="nav-link text-black" href="./destino.html">Destino</a>
+                         </li>
+                         <li class="nav-item">
+                            <a class="nav-link text-black" href="./promocoes.html">Promoções</a>
+                         </li>
+                         <li class="nav-item">
+                            <a class="nav-link text-black" href="./contato.html">Contato</a>
+                         </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+<!--Final do Menu com acesso para as 4 guias do site-->
+<!--Início do main - conteúdo principal da página destino com base em formulário-->
+    <main class="container_formulario">
+        <div class="ajustes-cor-formulario">
+           <h2>Encontre seu destino</h2>
+           <form>
+              <fieldset class="caixa_formulario">
+                 <div class="campo">
+                    <legend>Origem:</legend>
+                    <input type="text" placeholder="De onde deseja partir?" id="origem">
+                 </div>
+                 <div class="campo">
+                    <legend>Destino:</legend>
+                    <input type="text" placeholder="Para onde gostaria de ir?" id="destino">
+                 </div>
+                 <div class="campo">
+                    <label>Data da ida:</label>
+                    <input type="date" nome="data_ida" id="data_ida">
+                 </div>
+                 <div class="campo">
+                    <label>Data da volta:</label>
+                    <input type="date" nome="data_volta" id="data_volta">
+                 </div>
+                 <input type="submit" value="Enviar">
+              </fieldset>
+           </form>
+        </div>
+     </main>
+<!--Final do main - conteúdo principal da página destino com base em formulário-->
+<!--Início da section que busca através de cards mostrar os destinos mais visitados do último mês-->
+     <section class="cards-sugestaodest">
+        <h2 class="text-center" style="font-weight: bold;">Destinos mais visitados no último mês</h2>
+        <div class="card-group">
+           <div class="card">
+              <img class="card-img-top img-fluid" src="./imagens/barcelona_card.jpg" alt="Imagem de capa do card"> 
+              <div class="card-body">
+                 <h5 class="card-title">Barcelona (Espanha)</h5>
+                 <p class="card-text">De:  <span class="texto-riscado">R$ 5000</span></p>
+                 <p class="card-text">Preço com desconto: R$ 4200</p>
+                 <p class="card-text">A segunda maior cidade da Espanha (atrás apenas de Madri) é camaleônica. A cidade de Barcelona se reinventa a cada esquina, a cada bairro, a cada ponto de vista. Tem grandes avenidas, centros comerciais, indústrias e universidades. Tem também natureza, montanhas, parques e praias.</p>
+                 <p class="card-text"><small class="text-muted">Oferta válida até 05 de Agosto de 2023</small></p>
+                 <span class="conteudo-sobre-imagem"> Cidades Históricas</span>
+                 <a href="#" class="btn btn-primary">Agendar</a>
+              </div>
+           </div>
+           <div class="card">
+              <img class="card-img-top img-fluid" src="./imagens/chapada_dos_veadeiros_card2.jpg" alt="Imagem de capa do card">
+              <div class="card-body">
+                 <h5 class="card-title">Chapada dos Veadeiros (Goiás) </h5>
+                 <p class="card-text">De:  <span class="texto-riscado">R$ 2500</span></p>
+                 <p class="card-text">Preço com desconto: R$ 2250</p>
+                 <p class="card-text">A Chapada dos Veadeiros é o destino perfeito para os amantes de natureza que buscam descanso, boas trilhas e deliciosos banhos de cachoeira. Sem falar, claro, no sempre espetacular pôr do sol que presenteia os viajantes em meio ao cerrado da região centro-oeste.</p>
+                 <p class="card-text"><small class="text-muted">Oferta válida até 05 de Agosto de 2023</small></p>
+                 <span class="conteudo-sobre-imagem"> Ecoturismo</span>
+                 <a href="#" class="btn btn-primary">Agendar</a>
+              </div>
+           </div>
+           <div class="card">
+              <img class="card-img-top img-fluid" src="./imagens/fernandodenoronha_Card3.jpg" alt="Imagem de capa do card">
+              <div class="card-body">
+                 <h5 class="card-title">Fernando de Noronha (Pernambuco) </h5>
+                 <p class="card-text">De:  <span class="texto-riscado">R$ 4000</span></p>
+                 <p class="card-text">Preço com desconto: R$ 3200</p>
+                 <p class="card-text">Fernando de Noronha é um lugar onde a natureza ganhou contornos surpreendentes. A geografia privilegiada tem o mais belo conjunto de ilhas do Brasil — são mais de 7 mil quilômetros de litoral e 21 praias de beleza estonteante, o cenário perfeito para desfrutar de momentos inesquecíveis</p>
+                 <p class="card-text"><small class="text-muted">Oferta válida até 05 de Agosto de 2023</small></p>
+                 <span class="conteudo-sobre-imagem"> Locais Paradisíacos</span>
+                 <a href="#" class="btn btn-primary">Agendar</a>
+              </div>
+           </div>
+        </div>
+     </section>
+<!--Final da section-->
+<!--Início do rodapé das páginas-->
+    <footer>
+        <div id="footer_content">
+            <div id="footer_contacts">
+                <a href="#" class="logo"> <img class="cabecalho_logo" src="../imagens/logo_nav.png" alt="Logo da Vogue"> </a>
+                <p>A empresa para realizar seus sonhos com a melhor experiência</p>
+                <div id="footer_social_media">
+                    <a href="#" class="footer_link" id="instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="footer_link" id="facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="footer_link" id="whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>    
+            </div>
+            <ul class="footer_list">
+                <li><h3>Categorias de viagens</h3></li>
+                <li><a href="#" class="footer_link">Ecoturismo</a></li>
+                <li><a href="#" class="footer_link">Cidades paradisíacas</a></li>
+                <li><a href="#" class="footer_link">Cidades Históricas</a></li>
+            </ul>
+    
+            <ul class="footer_list">
+                <li><h3>Produtos</h3></li>
+                <li><a href="#" class="footer_link">Aluguel de carros</a></li>
+                <li><a href="#" class="footer_link">Shows</a></li>
+                <li><a href="#" class="footer_link">Hospedagem</a></li>
+            </ul>
+    
+            <div id="footer_subscribe">
+                <h2>Inscreva-se</h2>
+                <p> Digite seu email para receber nossas promoções de viagem</p>
+                <div id="input_group">
+                    <input type="email" id="email">
+                    <button><i class="fa-regular fa-envelope"></i></button>
+                </div>
+            </div>
+        </div>
+        <div id="footer_copyright">
+            &#169
+            2023 
+        </div>
+    </footer>
+<!--Final do rodapé das páginas-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+
+
